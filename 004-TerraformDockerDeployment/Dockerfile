@@ -1,4 +1,4 @@
-# docker run -p 8080:8080 --name color-web ghcr.io/chance2021/devopsdaydayup:colorweb
+# docker run -p 8080:8080 --name hello-world hello-world:develop
 FROM python:3.8-alpine
 
 RUN mkdir /app
@@ -12,3 +12,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 
 CMD ["python", "app.py"]
+
